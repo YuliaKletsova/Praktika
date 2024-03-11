@@ -16,21 +16,21 @@
 </style>
 
 <div class="sticky top-0">
-    <Navbar class="bg-customBlue">
-        <NavHamburger  />
+    <Navbar class="md:bg-customBlue sm:bg-white">
+        <NavHamburger  class="hamburger stroke-white"/>
         <NavBrand />
-        <NavUl class="flex flex-col justify-end">
-          <NavLi on:click={() => scrollToSection('home')} class="text-white">Home</NavLi>
-          <NavLi on:click={() => scrollToSection('schedule')} class="text-white">Schedule</NavLi>
-          <NavLi on:click={() => scrollToSection('about')} class="text-white">About</NavLi>
-          <NavLi on:click={() => scrollToSection('contacts')} class="text-white">Contacts</NavLi>
+        <NavUl>
+          <NavLi on:click={() => scrollToSection('home')} class="md:text-white sm:text-black">Home</NavLi>
+          <NavLi on:click={() => scrollToSection('schedule')} class="md:text-white sm:text-black">Schedule</NavLi>
+          <NavLi on:click={() => scrollToSection('about')} class="md:text-white sm:text-black">About</NavLi>
+          <NavLi on:click={() => scrollToSection('contacts')} class="md:text-white sm:text-black">Contacts</NavLi>
         </NavUl>
     </Navbar>
 </div>
 <div id="home" class="flex justify-center items-center page">
     <div class="flex items-center">
-        <img src={logo} alt="Logo" width={150} height={150} class="shrink-0"/>
-        <span class="font-bold text-8xl">ráktika</span>
+        <img src={logo} alt="Logo" class="md:shrink-0 md:w-36 md:h-36 w-12 h-12"/>
+        <span class="font-bold md:text-8xl text-5xl">ráktika</span>
     </div>
 </div>
 <div id="schedule" class="flex justify-center items-center page bg-white">
@@ -39,6 +39,6 @@
 <div id="about" class="flex justify-center items-center page bg-white">
     <About />
 </div>
-<div id="contacts" class="flex gap-20 items-center page bg-white p-40">
+<div id="contacts" class="flex md:gap-20 gap-0  page bg-white md:p-40 p-20">
    <Contacts />
 </div>
