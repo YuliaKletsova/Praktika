@@ -1,14 +1,21 @@
 <script lang="ts">
     import logo from './assets/praktika.jpg'
-  import About from './lib/About.svelte'
+    import About from './lib/About.svelte'
     import Contacts from './lib/Contacts.svelte'
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 
+    let height = window.innerHeight;
 
-    function scrollToSection(id: string) {
-        const section = document.getElementById(id);
-        section?.scrollIntoView({ behavior: 'smooth' });
+    function scrollToSection(id: number) {
+        window?.scroll({
+            top: height * id,
+            behavior: "smooth",
+        })
+        // const section = document.getElementById(id);
+        // section?.scrollIntoView({ behavior: 'smooth',  block: 'center'  });
     }
+
+
 </script>
 
 <style>
@@ -16,14 +23,14 @@
 </style>
 
 <div class="sticky top-0">
-    <Navbar class="md:bg-customBlue sm:bg-white">
-        <NavHamburger  class="hamburger stroke-white"/>
+    <Navbar let:hidden let:toggle class="bg-customBlue">
+        <NavHamburger menuClass="text-white"/>
         <NavBrand />
-        <NavUl>
-          <NavLi on:click={() => scrollToSection('home')} class="md:text-white sm:text-black">Home</NavLi>
-          <NavLi on:click={() => scrollToSection('schedule')} class="md:text-white sm:text-black">Schedule</NavLi>
-          <NavLi on:click={() => scrollToSection('about')} class="md:text-white sm:text-black">About</NavLi>
-          <NavLi on:click={() => scrollToSection('contacts')} class="md:text-white sm:text-black">Contacts</NavLi>
+        <NavUl {hidden}>
+          <NavLi on:click={() => {scrollToSection(0); toggle()}} class="md:text-white sm:text-black">Home</NavLi>
+          <NavLi on:click={() => {scrollToSection(1); toggle()}} class="md:text-white sm:text-black">Schedule</NavLi>
+          <NavLi on:click={() => {scrollToSection(2); toggle()}} class="md:text-white sm:text-black">About</NavLi>
+          <NavLi on:click={() => {scrollToSection(3); toggle()}} class="md:text-white sm:text-black">Contacts</NavLi>
         </NavUl>
     </Navbar>
 </div>
@@ -39,6 +46,6 @@
 <div id="about" class="flex justify-center items-center page bg-white">
     <About />
 </div>
-<div id="contacts" class="flex md:gap-20 gap-0  page bg-white md:p-40 p-20">
+<div id="contacts" class="flex md:gap-20 gap-0 page bg-white md:p-40 p-20">
    <Contacts />
 </div>
