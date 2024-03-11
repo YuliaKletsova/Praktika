@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       customBlue: 'rgb(63, 81, 181)',
+      white: '#ffffff',
     },
     border: {
       customBlue: 'rgb(63, 81, 181)',
