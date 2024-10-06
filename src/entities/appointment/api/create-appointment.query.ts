@@ -37,5 +37,5 @@ export const createAppointment = async (data: CreateAppointmentDto) => {
         },
     );
 
-    return api.post<void>('/api/supabase/appointments/insert', sendArrayData);
+    return api.post<void>('/api/appointment/insert', sendArrayData);
 };

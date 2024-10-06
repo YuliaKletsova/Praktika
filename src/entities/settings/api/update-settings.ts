@@ -7,5 +7,5 @@ export const updateSettings = (data: UpdateSettingsDto) => {
             settings: item,
         };
     });
-    return api.post<any>('api/supabase/settings/update', prepareData);
+    return api.post<any>('api/settings/update', prepareData);
 };

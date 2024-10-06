@@ -7,7 +7,7 @@ export const updateAppointment = async (data: UpdateAppointmentDto) => {
 
     if (data.status === APPOINTMENTS_STATUSES.APPROVED) {
         const { data: eventData } = await api.post(
-            'api/calendar/post',
+            'api/appointment/publish-in-calendar',
             data.appointment,
         );
 
@@ -15,7 +15,7 @@ export const updateAppointment = async (data: UpdateAppointmentDto) => {
         calendarLink = eventData.htmlLink;
     }
 
-    return api.post('api/supabase/appointments/post', {
+    return api.post('api/appointment/post', {
         calendarEventId,
         appointmentId: data.appointment.id,
         status: data.status,

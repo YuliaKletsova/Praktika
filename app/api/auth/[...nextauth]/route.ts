@@ -1,6 +1,6 @@
 import NextAuth, { AuthOptions, Account, Profile } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
-import { authenticateWithSupabase } from 'app/api/supabase/supabase';
+import { authenticateWithSupabase } from 'app/api/supabase';
 import googleConfig from '@shared/config/google';
 
 export const authOptions: AuthOptions = {

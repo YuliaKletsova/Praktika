@@ -3,7 +3,7 @@ import api from '@shared/api/base';
 import { EditAppointmentDto } from './dto/edit-appointment';
 
 export const editAppointment = async (data: EditAppointmentDto) => {
-    return api.post('api/supabase/appointments/edit', {
+    return api.post('api/appointment/edit', {
         comment: data.comment,
         fullName: data.fullName,
         startTime: data.time[0].format('YYYY-MM-DDTHH:ss'),

@@ -4,9 +4,7 @@ import { prettifyAppointments } from './mappers/prettify-appointments';
 import { extractDate, extractDay, extractTime } from '@shared/date.helpers';
 
 export const getAppointments = async () => {
-    const { data } = await api.get<Appointment[]>(
-        'api/supabase/appointments/get',
-    );
+    const { data } = await api.get<Appointment[]>('api/appointment/get');
 
     const mappedData = data.map((item) => ({
         ...item,
