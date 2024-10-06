@@ -34,7 +34,6 @@
         "react-hook-form": "^7.51.4",
         "react-i18next": "^15.0.2",
         "react-responsive": "^10.0.0",
-        "sass": "^1.79.4",
         "stream": "^0.0.2",
         "swiper": "^11.1.1"
     },
@@ -61,6 +60,7 @@
         "i18nexus-cli": "^3.5.0",
         "lint-staged": "^15.2.2",
         "prettier": "3.2.5",
+        "sass": "^1.79.4",
         "typescript": "5"
     }
 }

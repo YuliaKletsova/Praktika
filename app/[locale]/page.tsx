@@ -11,7 +11,6 @@ export default async function Home({ params: { locale } }: HomeProps) {
 
     return (
         <main>
-            {locale}
             <h1>{t('header_menu_home')}</h1>
         </main>
     );

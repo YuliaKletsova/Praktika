@@ -1,19 +1,30 @@
 import type { Metadata } from 'next';
+import { dir } from 'i18next';
 import { Providers } from '@app/providers';
-import { MainLayout } from '@app/layout';
+// import { MainLayout } from '@app/layout';
+import { i18nConfig } from '@shared/config/i18n.config';
+import '@app/styles/global.scss';
 
 export const metadata: Metadata = {
     title: 'Praktika',
     description: 'Praktika rehearsal studio',
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+    return i18nConfig.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
     children,
+    params: { locale },
 }: Readonly<{
     children: React.ReactNode;
+    params: {
+        locale: string;
+    };
 }>) {
     return (
-        <html lang="en">
+        <html lang={locale} dir={dir(locale)}>
             <head>
                 <title>Praktika</title>
                 <meta name="description" content="Praktika rehearsal studio" />
@@ -27,8 +38,8 @@ export default function RootLayout({
                 <link rel="preload" href="/p.png" as="image" />
             </head>
             <body>
-                <Providers>
-                    {/* <MainLayout></MainLayout> */}
+                <Providers locale={locale} namespaces={['common']}>
+                    {/* <MainLayout>{children}</MainLayout> */}
                     {children}
                 </Providers>
             </body>

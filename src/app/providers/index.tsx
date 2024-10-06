@@ -5,19 +5,24 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { queryClient } from '@shared/api/query-client';
 import { ModalProvider } from './ModalProvider';
 import { NotificationProvider } from './NotificationsProvider';
+import { TranslationsProvider } from './TranslationsProvider';
 
 type Props = {
     children: ReactNode;
+    locale: string;
+    namespaces: string[];
 };
 
-export const Providers = ({ children }: Props) => {
+export const Providers = ({ children, locale, namespaces }: Props) => {
     return (
         <QueryClientProvider client={queryClient}>
-            <ModalProvider>
-                <NotificationProvider>
-                    <AntdRegistry>{children}</AntdRegistry>
-                </NotificationProvider>
-            </ModalProvider>
+            <TranslationsProvider locale={locale} namespaces={namespaces}>
+                <ModalProvider>
+                    <NotificationProvider>
+                        <AntdRegistry>{children}</AntdRegistry>
+                    </NotificationProvider>
+                </ModalProvider>
+            </TranslationsProvider>
         </QueryClientProvider>
     );
 };
