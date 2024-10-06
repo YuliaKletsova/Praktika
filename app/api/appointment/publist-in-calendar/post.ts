@@ -1,8 +1,8 @@
 import dayjs from 'dayjs';
 import { google } from 'googleapis';
 import { NextApiResponse } from 'next/types';
+import { jwtClientGoogleCalendar } from '@app/config/jwtClientGoogleCalendar';
 import { Appointment } from '@entities/appointment/types';
-import { jwtClientGoogleCalendar } from '@shared/config/jwtClientGoogleCalendar';
 import {
     NextApiRequestWithSession,
     withSessionCheck,

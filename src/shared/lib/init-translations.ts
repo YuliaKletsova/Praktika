@@ -1,7 +1,7 @@
 import { createInstance, i18n as I18nInstance, InitOptions } from 'i18next';
 import { initReactI18next } from 'react-i18next/initReactI18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
-import { i18nConfig } from '@shared/config/i18n.config';
+import { i18nConfig } from '@app/config/i18n.config';
 
 export default async function initTranslations(
     locale: string,

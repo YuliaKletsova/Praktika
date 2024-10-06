@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { dir } from 'i18next';
 import { Providers } from '@app/providers';
+import { i18nConfig } from '@app/config/i18n.config';
 // import { MainLayout } from '@app/layout';
-import { i18nConfig } from '@shared/config/i18n.config';
 import '@app/styles/global.scss';
 
 export const metadata: Metadata = {

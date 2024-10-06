@@ -1,6 +1,6 @@
 import { google } from 'googleapis';
 import { NextApiRequest, NextApiResponse } from 'next/types';
-import { jwtClientGoogleCalendar } from '@shared/config/jwtClientGoogleCalendar';
+import { jwtClientGoogleCalendar } from '@app/config/jwtClientGoogleCalendar';
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
