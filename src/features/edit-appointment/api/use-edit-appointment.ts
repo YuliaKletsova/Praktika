@@ -1,9 +1,10 @@
 import { useMutation } from '@tanstack/react-query';
+import { useNotification } from '@notification';
 import { appointmentApi } from '@entities/appointment';
 import { queryClient } from '@shared/api/query-client';
 
 export const useEditAppointments = () => {
-    // const { notification } = useNotification();
+    const { notification } = useNotification();
 
     return useMutation({
         mutationFn: appointmentApi.editAppointment,
@@ -11,17 +12,17 @@ export const useEditAppointments = () => {
             queryClient.invalidateQueries({
                 queryKey: ['fetchAppointments'],
             });
-            // notification.success({
-            //     message: 'Appointment was successfully updated',
-            //     placement: 'bottom',
-            // });
+            notification.success({
+                message: 'Appointment was successfully updated',
+                placement: 'bottom',
+            });
         },
-        onError: () => {
-            // notification.error({
-            //     message: 'Something went wrong',
-            //     description: error.message,
-            //     placement: 'bottom',
-            // });
+        onError: (error) => {
+            notification.error({
+                message: 'Something went wrong',
+                description: error.message,
+                placement: 'bottom',
+            });
         },
     });
 };

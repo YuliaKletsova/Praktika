@@ -1,4 +1,4 @@
-import initTranslations from '@shared/lib/init-translations';
+// import initTranslations from '@shared/lib/init-translations';
 
 type HomeProps = {
     params: {
@@ -7,12 +7,12 @@ type HomeProps = {
 };
 
 export default async function Home({ params: { locale } }: HomeProps) {
-    const { t } = await initTranslations(locale, ['home']);
+    // const { t } = await initTranslations(locale, ['admin']);
 
     return (
         <main>
             {locale}
-            <h1>{t('header_menu_home')}</h1>
+            <h1>Admin</h1>
         </main>
     );
 }
