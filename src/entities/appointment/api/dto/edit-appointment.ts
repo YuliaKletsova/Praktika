@@ -1,7 +1,8 @@
 import { Dayjs } from 'dayjs';
+import { AppointmentStatuses } from '../../types';
 
 export type EditAppointmentDto = {
-    status: any; //AppointmentStatuses;
+    status: AppointmentStatuses;
     fullName: string;
     phone: string;
     time: Dayjs[];

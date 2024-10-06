@@ -1,5 +1,5 @@
-import { BrokenDrumstick } from '@shared/ui/icons/BrokenDrumstick';
-import { NotFoundSvg } from '@shared/ui/icons/NotFoundSvg';
+import { BrokenDrumstick } from './ui/BrokenDrumstick';
+import { NotFoundSvg } from './ui/NotFoundSvg';
 
 export const NotFoundMedia = () => {
     return (

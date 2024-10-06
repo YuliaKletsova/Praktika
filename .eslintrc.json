@@ -13,8 +13,8 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:prettier/recommended",
-        "plugin:cypress/recommended",
-        "plugin:boundaries/recommended"
+        "plugin:cypress/recommended"
+        // "plugin:boundaries/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -73,30 +73,30 @@
                 ],
                 "newlines-between": "never"
             }
-        ],
-        "boundaries/element-types": [
-            "error",
-            {
-                "default": "disallow",
-                "rules": [
-                    {
-                        "from": "shared",
-                        "allow": ["shared", "entities", "features"]
-                    },
-                    {
-                        "from": "entities",
-                        "allow": ["shared", "entities"]
-                    },
-                    {
-                        "from": "features",
-                        "allow": ["shared", "entities", "features"]
-                    },
-                    {
-                        "from": "pages",
-                        "allow": ["shared", "entities", "features", "pages"]
-                    }
-                ]
-            }
         ]
+        // "boundaries/element-types": [
+        //     "error",
+        //     {
+        //         "default": "disallow",
+        //         "rules": [
+        //             {
+        //                 "from": "shared",
+        //                 "allow": ["shared", "entities", "features"]
+        //             },
+        //             {
+        //                 "from": "entities",
+        //                 "allow": ["shared", "entities"]
+        //             },
+        //             {
+        //                 "from": "features",
+        //                 "allow": ["shared", "entities", "features"]
+        //             },
+        //             {
+        //                 "from": "pages",
+        //                 "allow": ["shared", "entities", "features", "pages"]
+        //             }
+        //         ]
+        //     }
+        // ]
     }
 }

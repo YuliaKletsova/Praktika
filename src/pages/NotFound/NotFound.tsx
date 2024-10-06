@@ -1,7 +1,7 @@
 'use client';
 import { Flex, Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { NotFoundMedia } from '@widgets/NotFoundMedia';
+import { NotFoundMedia } from '@features/page-not-found/NotFoundMedia';
 import { AnimatedBorderButton } from '@features/navigate-home';
 import styles from './NotFound.module.scss';
 
