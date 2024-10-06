@@ -36,8 +36,8 @@
         "unused-imports",
         "prettier",
         "cypress",
-        "jest",
-        "boundaries"
+        "jest"
+        // "boundaries"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",

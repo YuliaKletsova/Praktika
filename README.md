@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Lato&size=40&pause=1000&color=F7F7F7&width=435&height=60&lines=Pr%C3%A1ktika)](https://git.io/typing-svg)
 
-## Getting Started
+A website for rehearsal studio in Tbilisi.
+Main purpose of the website is to provided convenient interface, where users can check available time for rehearsal and create a reservation request. Also project contains admin-panel to manage appointments. By automating processes and enhancing their brand with a personal website, project owners aim to boost their popularity and expand their user base.
 
-First, run the development server:
+This repo is refactored version of the initial repo:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ledenev-viktor&repo=music-studio)](https://github.com/ledenev-viktor/music-studio)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Team rules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In this repo we used FSD architecture, brief overview:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TBD
 
-## Learn More
+### Team members:
 
-To learn more about Next.js, take a look at the following resources:
+[@YuliaKletsova](https://github.com/YuliaKletsova) - Team Lead, Architector
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[@ledenev-viktor](https://github.com/ledenev-viktor) - Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Stack:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Purpose       | Technology                                                                                                                                                                                                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework     | NextJs <img width="20px" height="20px" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704">                                                                                                                                  |
+| State Manager | React Query <img width="20px" height="20px" src="https://github.com/user-attachments/assets/a3e40bf1-82d5-4907-b3bd-10d2eb4b00f5">                                                                                                                                                          |
+| Auth          | Next-Auth Google Provider <img width="20px" height="20px" src="https://avatars.githubusercontent.com/u/67470890?s=200&v=4">                                                                                                                                                                 |
+| UI Kit        | AntDesign <img width="20px" height="20px" src="https://camo.githubusercontent.com/f6bf5ee2b30310ad83a81212b9be69bdc2bb577f2ebe868ad89f8586b4721ffc/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667"> |
+| Database      | Supabase <img width="20px" height="20px" src="https://github.com/user-attachments/assets/e40fc76b-c8d8-47c3-bb53-c7795abaf596">                                                                                                                                                             |
+| External API  | Google Calendar API, Google Drive API <img width="50px" height="15px" src="https://static-00.iconduck.com/assets.00/google-icon-2048x673-w3o7skkh.png">                                                                                                                                     |
+| Style         | SASS <img width="20px" height="20px" src="https://user-images.githubusercontent.com/25181517/192158956-48192682-23d5-4bfc-9dfb-6511ade346bc.png">                                                                                                                                           |
