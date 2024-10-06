@@ -1,0 +1,102 @@
+{
+    "root": true,
+    "env": { "browser": true, "es2020": true, "cypress/globals": true },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:prettier/recommended",
+        "plugin:cypress/recommended",
+        "plugin:boundaries/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "project": ["tsconfig.json"]
+            }
+        }
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "unused-imports",
+        "prettier",
+        "cypress",
+        "jest",
+        "boundaries"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/no-unknown-property": [
+            2,
+            {
+                "ignore": ["jsx", "global"]
+            }
+        ],
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": [0],
+        "import/extensions": "off",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "import/order": [
+            "error",
+            {
+                "pathGroups": [
+                    { "pattern": "react", "group": "builtin" },
+                    { "pattern": "@shared/**", "group": "sibling" },
+                    { "pattern": "@entities/**", "group": "sibling" },
+                    { "pattern": "@features/**", "group": "internal" },
+                    { "pattern": "@widgets", "group": "internal" },
+                    { "pattern": "@app", "group": "internal" }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"],
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index"
+                ],
+                "newlines-between": "never"
+            }
+        ],
+        "boundaries/element-types": [
+            "error",
+            {
+                "default": "disallow",
+                "rules": [
+                    {
+                        "from": "shared",
+                        "allow": ["shared", "entities", "features"]
+                    },
+                    {
+                        "from": "entities",
+                        "allow": ["shared", "entities"]
+                    },
+                    {
+                        "from": "features",
+                        "allow": ["shared", "entities", "features"]
+                    },
+                    {
+                        "from": "pages",
+                        "allow": ["shared", "entities", "features", "pages"]
+                    }
+                ]
+            }
+        ]
+    }
+}
