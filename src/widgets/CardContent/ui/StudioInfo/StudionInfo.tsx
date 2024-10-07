@@ -8,10 +8,10 @@ export const StudioInfo = () => {
     return (
         <Flex vertical align="baseline" gap="10px">
             <Typography.Title level={3} className={styles.text}>
-                {t('content_work_hours')}
+                {t('contacts:workingHours')}
             </Typography.Title>
             <Typography.Title level={3} className={styles.text}>
-                {t('content_contact_us')}
+                {t('contacts:contactUs')}
             </Typography.Title>
         </Flex>
     );

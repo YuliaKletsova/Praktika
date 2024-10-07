@@ -16,7 +16,9 @@ export const NotFound = () => {
             className={styles.wrapper}
         >
             <NotFoundMedia />
-            <Typography.Title level={3}>{t('404_title')}</Typography.Title>
+            <Typography.Title level={3}>
+                {t('common:404_title')}
+            </Typography.Title>
             <AnimatedBorderButton />
         </Flex>
     );

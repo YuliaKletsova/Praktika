@@ -42,37 +42,35 @@ export const MobileLinks = () => {
     const { t } = useTranslation();
 
     return (
-        <Flex
-            vertical
-            justify="space-between"
-            style={{ height: '100%', minHeight: 320 }}
-        >
-            <Flex vertical style={{ marginLeft: '15px' }}>
+        <Flex vertical>
+            <Flex vertical className={styles.info}>
                 <Typography.Text className={styles.title}>
-                    {t('content_studio_address_prefix')}
+                    {t('contacts:addressPrefix')}
                 </Typography.Text>
                 <Typography.Text className={styles.title}>
-                    {t('content_studio_address')}
+                    {t('contacts:addressMain')}
                 </Typography.Text>
                 <Typography.Text className={styles.subtitle}>
-                    {t('content_studio_work_hours')}
+                    {t('contacts:workingHoursMobile')}
                 </Typography.Text>
             </Flex>
-            {links.map((link, i) => (
-                <Link key={i} href={link.href} target="_blank">
-                    <Flex
-                        align="center"
-                        justify="space-between"
-                        className={styles.linkStyle}
-                    >
-                        <Flex align="center" gap={5}>
-                            {link.icon}
-                            {link.title}
+            <Flex vertical gap="15px" className={styles.buttonsList}>
+                {links.map((link, i) => (
+                    <Link key={i} href={link.href} target="_blank">
+                        <Flex
+                            align="center"
+                            justify="space-between"
+                            className={styles.linkStyle}
+                        >
+                            <Flex align="center" gap={5}>
+                                {link.icon}
+                                {link.title}
+                            </Flex>
+                            <ArrowRightOutlined />
                         </Flex>
-                        <ArrowRightOutlined />
-                    </Flex>
-                </Link>
-            ))}
+                    </Link>
+                ))}
+            </Flex>
         </Flex>
     );
 };

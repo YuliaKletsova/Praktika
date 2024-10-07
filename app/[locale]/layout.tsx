@@ -38,7 +38,10 @@ export default async function RootLayout({
                 <link rel="preload" href="/p.png" as="image" />
             </head>
             <body>
-                <Providers locale={locale} namespaces={['common']}>
+                <Providers
+                    locale={locale}
+                    namespaces={['common', 'home', 'contacts', 'application']}
+                >
                     <MainLayout>{children}</MainLayout>
                     {/* {children} */}
                 </Providers>
