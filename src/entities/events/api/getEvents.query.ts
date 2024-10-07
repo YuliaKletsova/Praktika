@@ -1,5 +1,5 @@
-import api from '@shared/api/base';
-import { GetAppointmentDto } from './dto/get-events-list';
+import api from '@shared/lib/apiClient';
+import { GetAppointmentDto } from './dto/getEvents.dto';
 
 export const getEvents = async ({ startDate, endDate }: GetAppointmentDto) => {
     const { data } = await api.get('/api/events', {

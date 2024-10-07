@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query';
 import { useNotification } from '@notification';
 import { appointmentApi } from '@entities/appointment';
-import { queryClient } from '@shared/api/query-client';
+import { queryClient } from '@shared/lib/queryClient';
 
 export const useEditAppointments = () => {
     const { notification } = useNotification();

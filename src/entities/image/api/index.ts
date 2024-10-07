@@ -1,3 +1,3 @@
-export { deleteImage } from './delete-image';
-export { getImages } from './get-images';
-export { uploadImage } from './upload-image';
+export { deleteImage } from './deleteImage';
+export { getImages } from './getImages';
+export { uploadImage } from './uploadImage';

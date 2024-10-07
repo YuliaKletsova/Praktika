@@ -11,7 +11,74 @@ This repo is refactored version of the initial repo:
 
 In this repo we used FSD architecture, brief overview:
 
-TBD
+Entities folder
+
+```
+└── [entity]/
+        |
+        ├── index.ts               // Re-exporting api and type for this entity
+        ├── types.ts               // can be a folder, contains needed types for the entity
+        └── api/
+            ├── [handler].query.ts // queryFunction
+            ├── index.ts           // Re-exporting queryFunction from api folder
+            ├── dto/               // data type objects for concrete api method
+            ├── rto/               // response type object for concrete api method(optional)
+            └── mappers/           // adapters for dto --> rto
+
+
+```
+
+Features folder:
+
+```
+└── [feature]/                     // each feature is unique business flow
+        |
+        ├── api/                   // API interactions specific to this feature
+        ├── ui/                    // UI components (e.g., LoginForm)
+        ├── model/                 // Business logic (stores, hooks, etc.)
+        └── types.ts               // Feature-specific types
+
+```
+
+Widgets folder:
+
+```
+└── [widget]/                     // each widget should be unique
+        |
+        ├── ui/                    // UI components (e.g., LoginForm)
+        ├── model/                 // Business logic (stores, hooks, etc.)
+        └── types.ts               // Widget-specific types
+
+```
+
+Pages folder:
+
+```
+└── [page]/
+        |
+        ├── ui/                    // UI components (e.g., LoginForm)
+        ├── model/                 // Business logic (stores, hooks, etc.)
+        └── types.ts               // Page-specific types
+
+```
+
+Shared folder:
+
+```
+└── shared/
+    ├── ui/                // Reusable UI components (e.g., Button, Input)
+    │   ├── [component]/
+    │   │   ├── [component].tsx
+    │   │   ├── [component].module.css
+    │   │   └── index.ts
+    │   └── index.ts       // Re-export all UI components
+    ├── lib/               // Utility functions and helpers (e.g., formatters, validators)
+    ├── config/            // Configuration files (e.g., environment variables, i18n)
+    ├── types/             // Global TypeScript types and interfaces
+    ├── hooks/             // Reusable custom hooks (e.g., `useWindowSize`, `useToggle`)
+    └── styles/            // Global styles, mixins, and variables
+        ├── _variables.scss
+```
 
 ### Team members:
 

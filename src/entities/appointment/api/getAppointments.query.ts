@@ -1,7 +1,11 @@
 import { Appointment } from '../types';
-import api from '@shared/api/base';
+import api from '@shared/lib/apiClient';
 import { prettifyAppointments } from './mappers/prettify-appointments';
-import { extractDate, extractDay, extractTime } from '@shared/date.helpers';
+import {
+    extractDate,
+    extractDay,
+    extractTime,
+} from '@shared/helpers/date.helpers';
 
 export const getAppointments = async () => {
     const { data } = await api.get<Appointment[]>('api/appointment/get');

@@ -2,7 +2,7 @@
 import { ReactNode } from 'react';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-import { queryClient } from '@shared/api/query-client';
+import { queryClient } from '@shared/lib/queryClient';
 import { ModalProvider } from './ModalProvider';
 import { NotificationProvider } from './NotificationsProvider';
 import { TranslationsProvider } from './TranslationsProvider';

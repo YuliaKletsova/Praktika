@@ -1,6 +1,6 @@
 import { APPOINTMENTS_STATUSES } from '../types';
-import api from '@shared/api/base';
-import { UpdateAppointmentDto } from './dto/update-appointment';
+import api from '@shared/lib/apiClient';
+import { UpdateAppointmentDto } from './dto/updateAppointment.dto';
 
 export const updateAppointment = async (data: UpdateAppointmentDto) => {
     let calendarEventId, calendarLink;
