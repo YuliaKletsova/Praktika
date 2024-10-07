@@ -2,7 +2,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { createInstance } from 'i18next';
-import initTranslations from '@shared/lib/init-translations';
+import initTranslations from '@shared/lib/initTranslations';
 
 type TranslationsProviderProps = {
     children: ReactNode;

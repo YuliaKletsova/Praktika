@@ -1,9 +1,9 @@
 import { NextApiResponse } from 'next/types';
-import { drive } from '..';
 import {
     NextApiRequestWithSession,
     withSessionCheck,
-} from '@shared/lib/with-check-session';
+} from 'app/api/withSessionCheck';
+import { drive } from '..';
 
 async function handler(req: NextApiRequestWithSession, res: NextApiResponse) {
     try {

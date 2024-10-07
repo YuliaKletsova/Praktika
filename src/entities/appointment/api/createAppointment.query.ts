@@ -1,6 +1,6 @@
-import api from '@shared/api/base';
-import { CreateAppointmentDto } from './dto/create-appointment';
-import { mergeIntervals } from '@shared/lib/merge-intervals';
+import api from '@shared/lib/apiClient';
+import { CreateAppointmentDto } from './dto/createAppointment.dto';
+import { mergeIntervals } from '@shared/lib/mergeIntervals';
 
 export const createAppointment = async (data: CreateAppointmentDto) => {
     const {

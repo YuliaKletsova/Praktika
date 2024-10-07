@@ -1,1 +1,1 @@
-export { getEvents } from './get-events-list.query';
+export { getEvents } from './getEvents.query';

@@ -1,4 +1,4 @@
-import initTranslations from '@shared/lib/init-translations';
+import initTranslations from '@shared/lib/initTranslations';
 
 type HomeProps = {
     params: {

@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import { useScreenDetector } from '@shared/hooks/use-responsive';
+import { useScreenDetector } from '@shared/hooks/useResponsive';
 
 const menu = [
     { text: 'header_menu_home', path: '/' },

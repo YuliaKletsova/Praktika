@@ -1,5 +1,5 @@
-import api from '@shared/api/base';
-import { UpdateSettings, UpdateSettingsDto } from './dto/update-settings';
+import api from '@shared/lib/apiClient';
+import { UpdateSettings, UpdateSettingsDto } from './dto/updateSettings.dto';
 
 export const updateSettings = (data: UpdateSettingsDto) => {
     const prepareData = data?.map((item: UpdateSettings) => {

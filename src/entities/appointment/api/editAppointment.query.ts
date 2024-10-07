@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import api from '@shared/api/base';
-import { EditAppointmentDto } from './dto/edit-appointment';
+import api from '@shared/lib/apiClient';
+import { EditAppointmentDto } from './dto/editAppointment.dto';
 
 export const editAppointment = async (data: EditAppointmentDto) => {
     return api.post('api/appointment/edit', {
