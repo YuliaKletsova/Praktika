@@ -1,0 +1,1 @@
+export { BrandAnimation } from './BrandAnimation';

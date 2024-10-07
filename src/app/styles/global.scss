@@ -1,5 +1,8 @@
+@import '@shared/styles/variables';
+
 html,
 body {
     margin: 0;
     padding: 0;
+    background: $blue;
 }
