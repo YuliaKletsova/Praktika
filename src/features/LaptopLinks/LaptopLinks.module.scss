@@ -1,0 +1,21 @@
+@import '@shared/styles/variables';
+
+.wrapper {
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    color: $blue;
+}
+
+.hiddenBlock {
+    position: absolute;
+    top: 0;
+}
+
+.char {
+    display: inline-block;
+}
+
+.relativeBlock {
+    position: relative;
+}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { dir } from 'i18next';
 import { Providers } from '@app/providers';
 import { i18nConfig } from '@app/config/i18n.config';
-// import { MainLayout } from '@app/layout';
+import { MainLayout } from '@app/layout';
 import '@app/styles/global.scss';
 
 export const metadata: Metadata = {
@@ -39,8 +39,8 @@ export default async function RootLayout({
             </head>
             <body>
                 <Providers locale={locale} namespaces={['common']}>
-                    {/* <MainLayout>{children}</MainLayout> */}
-                    {children}
+                    <MainLayout>{children}</MainLayout>
+                    {/* {children} */}
                 </Providers>
             </body>
         </html>

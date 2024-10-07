@@ -1,0 +1,17 @@
+@import '@shared/styles/variables';
+
+.cardContent {
+    padding: 40px;
+    height: 100%;
+    overflow: scroll;
+    margin-top: 0;
+
+    @media (max-width: $mobileBreakpoint) {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    @media (max-width: $tabletBreakpoint) and (min-width: $mobileBreakpoint) {
+        padding: 0;
+    }
+}
