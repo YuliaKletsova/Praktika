@@ -3,6 +3,12 @@
 A website for rehearsal studio in Tbilisi.
 Main purpose of the website is to provided convenient interface, where users can check available time for rehearsal and create a reservation request. Also project contains admin-panel to manage appointments. By automating processes and enhancing their brand with a personal website, project owners aim to boost their popularity and expand their user base.
 
+<p align="center">
+<a href="#team-rules">Team rules</a> • 
+<a href="#team-members">Team Members</a> • 
+<a href="#stack">Team rules</a>
+</p>
+
 This repo is refactored version of the initial repo:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ledenev-viktor&repo=music-studio)](https://github.com/ledenev-viktor/music-studio)
@@ -80,13 +86,13 @@ Shared folder:
         ├── _variables.scss
 ```
 
-### Team members:
+### Team members
 
 [@YuliaKletsova](https://github.com/YuliaKletsova) - Team Lead, Architector
 
 [@ledenev-viktor](https://github.com/ledenev-viktor) - Developer
 
-## Stack:
+## Stack
 
 | Purpose       | Technology                                                                                                                                                                                                                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
