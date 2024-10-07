@@ -1,17 +1,27 @@
+<p align="center">
+<a href="#team-rules">Team rules</a> • 
+<a href="#stack">Stack</a>
+</p>
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Lato&size=40&pause=1000&color=F7F7F7&width=435&height=60&lines=Pr%C3%A1ktika)](https://git.io/typing-svg)
 
 A website for rehearsal studio in Tbilisi.
 Main purpose of the website is to provided convenient interface, where users can check available time for rehearsal and create a reservation request. Also project contains admin-panel to manage appointments. By automating processes and enhancing their brand with a personal website, project owners aim to boost their popularity and expand their user base.
 
-<p align="center">
-<a href="#team-rules">Team rules</a> • 
-<a href="#team-members">Team Members</a> • 
-<a href="#stack">Team rules</a>
-</p>
 
 This repo is refactored version of the initial repo:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ledenev-viktor&repo=music-studio)](https://github.com/ledenev-viktor/music-studio)
+
+### Team members
+
+[@YuliaKletsova](https://github.com/YuliaKletsova) - Team Lead, Architector
+
+[@ledenev-viktor](https://github.com/ledenev-viktor) - Developer
+
+<br/>
+<br/>
+<br/>
 
 ## Team rules
 
@@ -85,12 +95,6 @@ Shared folder:
     └── styles/            // Global styles, mixins, and variables
         ├── _variables.scss
 ```
-
-### Team members
-
-[@YuliaKletsova](https://github.com/YuliaKletsova) - Team Lead, Architector
-
-[@ledenev-viktor](https://github.com/ledenev-viktor) - Developer
 
 ## Stack
 
